@@ -2,11 +2,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title of the document</title>
+<title>Login de sesion</title>
 </head>
-
+<h1>Login de sesion</h1>
 <body>
-Content of the document......
+<script>
+function msj(){
+var but=document.getElementById("button");
+var user=document.getElementById("iuser");
+var pass=document.getElementById("ipassword");
+
+if(pass.value==user.value){
+	alert("Los datos ingresados son correctos");
+}
+else if (pass.value!=user.value){
+alert("Los datos ingresados son incorrectos");
+}
+}
+
+</script>
+<input type="text" id="iuser" placeholder="Ingrese usuario" > </br></br>
+<input type="password" id="ipassword" placeholder="Ingrese contraseña">
+</br></br>
+<input type="button" id="button" value="Log in" onclick="msj()" >
+
+
 </body>
 
 </html>
